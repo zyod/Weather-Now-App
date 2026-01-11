@@ -1,0 +1,45 @@
+@media (min-width: 48.25rem) and (max-width: 70.49rem) {
+  .header-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 26rem;
+    padding: 2.5rem;
+  }
+
+  .units-btn {
+    padding: 0.6rem 0.9rem;
+    height: 2.2rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    white-space: nowrap;
+  }
+
+  .theme-btn {
+    padding: 0.6rem 0.9rem;
+    height: 2.2rem;
+    width: 5.6rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    white-space: nowrap;
+  }
+
+  /* Hourly forecast section for tablet - maintain 8-item scroll limit */
+  .hourly-forecast-section {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1.2rem 1.7rem 1.2rem 1.2rem; /* top right bottom left - extra right padding for scrollbar */
+    /* Show exactly 8 items: header container (~3.5rem) + 8 items (8 * 3.7rem = 29.6rem) + 7 gaps (7 * 1rem = 7rem) = ~40.1rem */
+    height: calc(3.5rem + (3.7rem * 8) + (1rem * 7));
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .weather-by-hour-container {
+    width: 100%;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+}

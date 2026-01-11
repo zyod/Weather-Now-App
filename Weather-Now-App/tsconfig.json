@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["DOM", "ES2017"],
+    "module": "none",
+    "strict": false,
+    "sourceMap": false,
+    "outFile": "./dist/weather.js"
+  },
+  "files": [
+    "src/ts/types.ts",
+    "src/ts/state.ts",
+    "src/ts/dom.ts",
+    "src/ts/ui.ts",
+    "src/ts/theme.ts",
+    "src/ts/weatherMap.ts",
+    "src/ts/unitsMenu.ts",
+    "src/ts/search.ts",
+    "src/ts/hourly.ts",
+    "src/ts/dayMenu.ts",
+    "src/ts/api.ts",
+    "src/ts/main.ts"
+  ]
+}

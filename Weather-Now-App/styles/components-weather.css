@@ -1,0 +1,347 @@
+/* ERROR */
+.error-section {
+  margin: auto;
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.error-img {
+  margin: auto;
+  width: 2rem;
+  margin-bottom: 1rem;
+}
+
+.som-wnt-wrng-txt {
+  font-family: "Bricolage Grotesque", sans-serif;
+  margin-top: 0.5rem;
+}
+
+.error-details-txt {
+  font-size: 0.86rem;
+  margin-top: 0.5rem;
+  font-weight: 300;
+}
+
+.retry-btn {
+  width: 5rem;
+  height: 2rem;
+  margin: auto;
+  margin-top: 1rem;
+  background-color: var(--neutral-800);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.retry-img {
+  width: 0.8rem;
+}
+
+/* SEARCH LOADING */
+.search-loading {
+  margin: auto;
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.search-loading-img {
+  margin: auto;
+  width: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.search-loading-txt {
+  font-size: 0.86rem;
+  margin-top: 0.5rem;
+  font-weight: 300;
+}
+
+/* SEARCH NO RESULT */
+.search-no-result {
+  margin: auto;
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.search-no-result-img {
+  margin: auto;
+  width: 2rem;
+  margin-bottom: 1rem;
+}
+
+.search-no-result-txt {
+  font-family: "Bricolage Grotesque", sans-serif;
+  margin-top: 0.5rem;
+}
+
+/* CURRENT WEATHER */
+.weather-section {
+  position: relative;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../assets/images/bg-today-small.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  background-size: cover;
+  margin-top: 2rem;
+  min-height: 20rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.location-date-container {
+  display: grid;
+  text-align: center;
+  margin-top: 1.9rem;
+}
+
+.location-txt {
+  font-size: 1.85rem;
+}
+
+.date-txt {
+  font-size: 1.15rem;
+  margin-top: 0.7rem;
+  font-weight: 200;
+}
+
+.temp-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.weather-img {
+  height: 7.5rem;
+}
+
+.tempreture-txt {
+  font-size: 6rem;
+  font-style: italic;
+}
+
+/* DETAILS */
+.weather-details-section {
+  margin-top: 1.2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.weather-details-container {
+  display: grid;
+  justify-content: left;
+  align-items: center;
+  background-color: var(--neutral-800);
+  height: 7.2rem;
+  border-color: var(--neutral-600);
+  border-radius: 0.7rem;
+  border-style: solid;
+  border-width: 0.1rem;
+}
+
+.weather-det-txt {
+  margin-top: 0.5rem;
+  font-weight: 100;
+  margin-left: 1.1rem;
+  font-size: 1.15rem;
+}
+
+.weather-det-txt-2 {
+  font-weight: 100;
+  margin-left: 1.1rem;
+  font-size: 2rem;
+}
+
+/* DAILY */
+.daily-forecast-txt {
+  margin-top: 2.1rem;
+  font-size: 1.28rem;
+}
+
+.daily-forecast-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1.1rem;
+}
+
+.weather-by-day-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 10.1rem;
+  background-color: var(--neutral-800);
+  border-color: var(--neutral-600);
+  border-radius: 0.7rem;
+  border-style: solid;
+  border-width: 0.1rem;
+  gap: 0.8rem;
+}
+
+.day-txt {
+  font-size: 1.1rem;
+}
+
+.weather-day-img {
+  width: 4rem;
+}
+
+.temp-high-low-container {
+  display: flex;
+  gap: 2.4rem;
+  font-weight: 100;
+}
+
+/* HOURLY */
+.hourly-forecast-section {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--neutral-800);
+  border-radius: 1.1rem;
+  padding: 1.2rem 1.7rem 1.2rem 1.2rem; /* top right bottom left - extra right padding for scrollbar */
+  width: 100%;
+  box-sizing: border-box;
+  /* Show exactly 8 items: header container (~3.5rem with margin) + 8 items (8 * 3.7rem = 29.6rem) + 7 gaps (7 * 1rem = 7rem) = ~40.1rem */
+  /* With box-sizing: border-box, padding is included in height */
+  height: calc(3.5rem + (3.7rem * 8) + (1rem * 7));
+  overflow-y: auto;
+  overflow-x: hidden;
+  
+  /* Firefox scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: var(--neutral-600) transparent;
+}
+
+.hourly-forecast-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  margin-bottom: 1rem;
+}
+
+.hourly-forecast-txt {
+  font-size: 1.3rem;
+}
+
+.weather-by-hour-container {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--neutral-700);
+  border: 0.1rem solid var(--neutral-600);
+  border-radius: 0.5rem;
+  height: 3.7rem;
+  padding: 0 1rem;
+  flex-shrink: 0;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+.weather-by-hour-container:last-child {
+  margin-bottom: 0;
+}
+
+.weather-by-hour-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.weather-hour-img {
+  width: 2.5rem;
+  flex-shrink: 0;
+}
+
+.time-txt {
+  font-size: 1.2rem;
+  white-space: nowrap;
+}
+
+.temp-txt {
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+/* Day selector button */
+.day-btn {
+  background-color: var(--neutral-600);
+  width: 7.5rem;
+  height: 2.3rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.4rem;
+  gap: 0.53rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.day-btn:hover {
+  background-color: var(--neutral-700);
+}
+
+.select-day-txt {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.drop-day-icon {
+  height: 0.5rem;
+}
+
+/* =========================
+   SCROLLBAR STYLING - All devices (Phone, Tablet, Desktop)
+   ========================= */
+
+/* WebKit scrollbar (Chrome, Edge, Safari) - Phone, Tablet, Desktop */
+.hourly-forecast-section::-webkit-scrollbar {
+  width: 0.55rem;
+}
+
+.hourly-forecast-section::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 999px;
+}
+
+.hourly-forecast-section::-webkit-scrollbar-thumb {
+  background: var(--neutral-600);
+  border-radius: 999px;
+}
+
+.hourly-forecast-section::-webkit-scrollbar-thumb:hover {
+  background: var(--neutral-700);
+}
+
+/* Hide scrollbar arrows/buttons */
+.hourly-forecast-section::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none;
+}

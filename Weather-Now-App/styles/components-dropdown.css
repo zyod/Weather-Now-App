@@ -1,0 +1,80 @@
+.dropdown-anchor {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  min-width: 14rem;
+  background: var(--neutral-800);
+  border: 0.1rem solid var(--neutral-600);
+  border-radius: 0.7rem;
+  z-index: 9999;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  padding: 0.4rem;
+}
+
+.dropdown-action {
+  width: 100%;
+  background: var(--neutral-700);
+  border: 0.1rem solid var(--neutral-600);
+  border-radius: 0.6rem;
+  padding: 0.6rem 0.7rem;
+  margin-bottom: 0.4rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.dropdown-action:hover {
+  background: var(--neutral-600);
+}
+
+.dropdown-label {
+  margin: 0.6rem 0.5rem 0.3rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+.dropdown-item {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: none;
+  padding: 0.6rem 0.7rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropdown-item:hover {
+  background: var(--neutral-700);
+}
+
+.checkmark {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+
+.dropdown-item .checkmark {
+  display: none;
+}
+
+.dropdown-item.is-selected .checkmark {
+  display: inline-block;
+}
+
+.dropdown-sep {
+  height: 1px;
+  background: var(--neutral-600);
+  margin: 0.35rem 0.25rem;
+}

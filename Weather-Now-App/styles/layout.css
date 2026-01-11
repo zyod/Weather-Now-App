@@ -1,0 +1,19 @@
+.app-main {
+  background-color: var(--neutral-900);
+  min-height: 100vh;
+}
+
+.main-section {
+  display: grid;
+  justify-content: center;
+  padding: 1rem;
+  background-color: var(--neutral-900);
+}
+
+.how-txt {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 3.2rem;
+  text-align: center;
+  margin-top: 1rem;
+  letter-spacing: 0.05rem;
+}

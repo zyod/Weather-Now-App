@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Now - Current Weather Forecast</title>
+    <meta name="description" content="Get real-time weather forecasts and conditions for any location worldwide." />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+
+  <body>
+    <app-header></app-header>
+    <app-main></app-main>
+
+    <!-- Load components FIRST (synchronous, guaranteed) -->
+    <script src="./components/app-header.js"></script>
+    <script src="./components/app-main.js"></script>
+
+    <!-- Then your compiled TS output -->
+    <script src="./dist/weather.js"></script>
+  </body>
+</html>
